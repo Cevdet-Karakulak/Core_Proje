@@ -13,8 +13,4 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Shared\Components\FeatureList\" />
-  </ItemGroup>
-
 </Project>
