@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "EditExperiance";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
 
@@ -13,9 +13,8 @@
             <div class="card-body">
                 <p class="card-description"> Deneyim Düzenleme Paneli </p>
                 <form class="forms-sample">
-                    <div class="form-group">
-                        <label>ID</label>
-                        @Html.TextBoxFor(x => x.ExperianceID, new { @class = "form-control" })
+                    <div class="form-group">                        
+                        @Html.HiddenFor(x => x.ExperianceID, new { @class = "form-control" })
                     </div>
                     <div class="form-group">
                         <label>Başlık</label>
