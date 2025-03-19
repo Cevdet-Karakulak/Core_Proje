@@ -15,7 +15,7 @@
                 <div class="justify-content-end d-flex">
                     <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
                         <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <i class="mdi mdi-calendar"></i> @DateTime.Now.ToShortDateString();
+                            <i class="mdi mdi-calendar"></i> @DateTime.Now.ToShortDateString()
                         </button>
                         
                     </div>
@@ -32,7 +32,7 @@
                 <div class="weather-info">
                     <div class="d-flex">
                         <div>
-                            <h2 class="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i>10<sup>C</sup></h2>
+                            <h2 class="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i>@ViewBag.v5<sup>C</sup></h2>
                         </div>
                         <div class="ml-2">
                             <h4 class="location font-weight-normal">Uzunkköprü</h4>
@@ -95,11 +95,12 @@
         <div class="card">
             <div class="card-body">
                 <div class="d-flex justify-content-between">
-                    <p class="card-title">Yardım Menüsü</p>
+                    <p class="card-title">Dashboard Sayfası</p>
                 </div>
-                <p class="font-weight-500">Uygullamayı kullanırken takıldığınız noktalar olursa bize hemen yazabilirsiniz. Ekip arkadaşlarımız sizinle iletişime geçecek.</p>
+                <p class="font-weight-500">Projemizin yazar panelinde bazı istatistiksel değerler ve hava durumu apisi üzerinden bulunduğun şehrin hava bilgisini öğrenebilirsin.</p>
                 
             </div>
         </div>
     </div>
 </div>
+@* https://api.openweathermap.org/data/2.5/weather?q=edirne&mode=xml&lang=tr&units=metric&appid=1e3f64357f4b1a4eba75abf41df096cc *@

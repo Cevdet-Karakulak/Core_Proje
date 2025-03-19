@@ -28,24 +28,25 @@
                         {
                             if (item.Status == "Yeni Yazı")
                             {
-                                color = "badge badge-danger";
+                                color = "preview-icon bg-success";
                             }
                             if (item.Status == "Yeni Video")
                             {
-                                color = "badge badge-warning";
+                                color = "preview-icon bg-warning";
                             }
                             if (item.Status == "Konferans")
                             {
-                                color = "badge badge-info";
-                            }
-                            if (item.Status == "Workshop")
-                            {
-                                color = "badge badge-success";
+                                color = "preview-icon bg-info";
                             }
                             if (item.Status == "Bootcamp")
                             {
-                                color = "badge badge-primary";
+                                color = "preview-icon bg-primary";
                             }
+                            if (item.Status == "Workshop")
+                            {
+                                color = "preview-icon bg-success";
+                            }
+
                             <tr>
                                 <th>@item.ID</th>
                                 <td>@item.Title</td>

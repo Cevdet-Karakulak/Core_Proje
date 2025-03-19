@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Core_Proje.Areas.Writer.Controllers
 {
@@ -21,6 +22,11 @@ namespace Core_Proje.Areas.Writer.Controllers
         {
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
             ViewBag.v=values.Name + ""+ values.SurName;
+
+            string api = "1e3f64357f4b1a4eba75abf41df096cc";
+            string connection = "http://api.openweathermap.org/data/2.5/weather?q=edirne&mode=xml&lang=tr&units=metric&appid=" + api;
+            XDocument document = XDocument.Load(connection);
+            ViewBag.v5 = document.Descendants("temperature").ElementAt(0).Attribute("value").Value;
 
             Context c=new Context();
             ViewBag.v1 = 0;
