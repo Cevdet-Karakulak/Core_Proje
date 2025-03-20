@@ -3,7 +3,7 @@ using DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
-namespace Core_Proje.Areas.Writer.ViewComponennts
+namespace Core_Proje.Areas.Writer.ViewComponents
 {
     public class Notification:ViewComponent
     {

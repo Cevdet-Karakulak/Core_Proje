@@ -32,5 +32,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<test2> test2s{ get; set; }
         public DbSet<test3> test3s{ get; set; }
         public DbSet<Announcement> announcements{ get; set; }
+        public DbSet<WriterMessage> WriterMessages{ get; set; }
     }
 }
