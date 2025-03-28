@@ -10,10 +10,7 @@ namespace Core_Proje.Controllers
         FeatureManager fm = new FeatureManager(new EfFeatureDal());
         [HttpGet]
         public IActionResult Index()
-        {        
-            ViewBag.v1 = "Düzenleme";
-            ViewBag.v2 = "Öne Çıkanlar";
-            ViewBag.v3 = "Öne Çıkan Sayfası";
+        {                  
             var values = fm.TGetById(1);
             return View(values);
         }       

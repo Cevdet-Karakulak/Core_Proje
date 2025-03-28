@@ -34,8 +34,7 @@ namespace Core_Proje.Controllers
         }
         [HttpGet]
         public IActionResult EditExperiance(int id)
-        {
-            
+        {            
             var values = em.TGetById(id);
             return View(values);
         }
