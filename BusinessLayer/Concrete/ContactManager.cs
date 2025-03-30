@@ -20,8 +20,7 @@ namespace BusinessLayer.Concrete
 
         public Contact TGetById(int id)
         {
-           
-           return _contactDal.GetById(id);
+            return _contactDal.GetById(id);
         }
 
         public List<Contact> TGetList()
