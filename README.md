@@ -85,3 +85,4 @@ Bu projeyi tamamlayarak ASP.NET Core ve web geliştirme konusundaki becerilerimi
 ![Image](https://github.com/user-attachments/assets/5bd3e378-220b-4357-9da9-62507131c07e)
 ![Image](https://github.com/user-attachments/assets/163c15be-e1e9-43aa-b11f-f4f327055693)
 ![Image](https://github.com/user-attachments/assets/6cbf46e3-d205-4b45-810a-4e98557ae022)
+![Image](https://github.com/user-attachments/assets/e8b20194-e54f-4b5c-9897-674b1132805d)
